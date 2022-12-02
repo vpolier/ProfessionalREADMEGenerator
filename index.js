@@ -53,7 +53,11 @@ inquirer.prompt([
         'WTF'
         ]
        },
-
+       {
+        type: 'input',
+        message: "what is your Github user name?",
+        name: "githubUserName"   
+       },
 ]).then (function(ans){
     // generate readme file based on the answers collected 
     console.log({ans});
